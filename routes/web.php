@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//首页
+Route::get('/index','Index\BrandController@index'); //首页的视图
+Route::get('/goods','Index\BrandController@goodsDesc'); //商品详情的展示
